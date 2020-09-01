@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#page-heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#under-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: black;
+}
+
+#header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+#text-and-picture {
+    display: flex;
+    justify-content: center;
+}
+
+#meie {
+    width: 50%;
+    height: auto;
+}
+
+#meist {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#meie-info {
+    text-align: justify;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+#erinevad-köögid {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.eesti, .aasia, .itaalia {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: red;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 2rem 0 2rem 0;
+}
