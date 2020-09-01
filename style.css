@@ -189,5 +189,6 @@ ul {
 @media only screen and (min-width: 768px) {
     .eesti:hover, .itaalia:hover, .aasia:hover {
         filter: saturate(50%);
+        cursor: pointer;
     }
 }
