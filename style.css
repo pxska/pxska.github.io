@@ -12,6 +12,8 @@
     margin: auto;
 }
 
+/*header*/
+
 #page-heading {
     text-align: center;
     font-size: 3rem;
@@ -24,13 +26,22 @@
     padding-bottom: 2rem;
 }
 
+#header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+/*nav*/
+
 nav {
     display: flex;
     font-size: 1.5rem;
     font-weight: bold;
     justify-content: space-around;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
 }
 
 nav a {
@@ -46,14 +57,7 @@ nav a:hover {
     color: salmon;
 }
 
-#header-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2rem;
-}
+/*meist*/
 
 #text-and-picture {
     display: flex;
@@ -78,6 +82,8 @@ nav a:hover {
     font-weight: normal;
 }
 
+/*erinevad köögid, ringid*/
+
 #erinevad-köögid {
     padding-top: 4rem;
     display: flex;
@@ -86,28 +92,41 @@ nav a:hover {
 }
 
 .eesti, .aasia, .itaalia {
-    width: 25rem;
-    height: 25rem;
+    width: 22.5rem;
+    height: 22.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: 100% 100%;
 }
 
 .eesti {
     background-image: url(./img/estonian-cuisine.jpg);
-    background-size: 100% 100%;
 }
 
 .aasia {
     background-image: url(./img/asian-cuisine.jpg);
-    background-size: 100% 100%;
 }
 
 .itaalia {
     background-image: url(./img/italian-cuisine.jpg);
-    background-size: 100% 100%;
 }
+
+#img-description {
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.eesti:hover #img-description, .itaalia:hover #img-description, .aasia:hover #img-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*footer, social logos*/
 
 footer {
     background-color: lightgray;
@@ -143,28 +162,7 @@ ul {
     align-items: center;
 }
 
-#img-description {
-    color: white;
-    font-size: 3rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
-}
-
-.eesti:hover #img-description {
-    visibility: visible;
-    opacity: 1;
-}
-
-.itaalia:hover #img-description {
-    visibility: visible;
-    opacity: 1;
-}
-
-.aasia:hover #img-description {
-    visibility: visible;
-    opacity: 1;
-}
+/*mobile*/
 
 @media only screen and (max-width: 768px) {
     #meie {
@@ -186,6 +184,7 @@ ul {
     }
 }
 
+/*no hover on mobile*/
 @media only screen and (min-width: 768px) {
     .eesti:hover, .itaalia:hover, .aasia:hover {
         filter: saturate(50%);
