@@ -1,50 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veebilehtede loomine edasijõudnutele</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 id="page-heading">COOKBOOK</h1>
-            <h2 id="under-text"><i>Eesti maitsvaim retseptiveeb</i></h2>
+<!doctype html>
+<html lang="ee">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content=""> 
+        <meta name="author" content="">
+        <title>Avaleht</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <!-- minu CSS -->
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <!-- päis --->
+        <header class="py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
+                </div>          
+            </div>
         </header>
-        <nav>
-            <a href="#">Retseptid</a>
-            <a href="#">Võta ühendust</a>
-        </nav>
-        <img id="header-img" src="./img/header-img.jpg" alt="cutting greens" />
-        <h2 id="meist">Meist</h2>
-        <section>
-            <div id="text-and-picture">
-                <p id="meie-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at turpis nunc. Duis congue nisi eu facilisis finibus. Sed ultricies urna nunc, sed malesuada augue fringilla eu. Fusce condimentum nisi eu tempor mollis. Morbi non sodales purus. Curabitur ante sapien, efficitur quis bibendum eget, elementum ut nunc. Nunc ut purus gravida, viverra massa quis, tincidunt lorem. Donec vel dictum augue, vitae posuere tortor. <br />Maecenas cursus, tortor nec ultrices aliquam, dui risus varius odio, et sagittis justo massa id tortor. Morbi ex nibh, vestibulum ac risus vitae, laoreet vestibulum tortor. Nulla at sodales sem. Sed laoreet iaculis elit vitae placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                <img id="meie" src="./img/meie.jpg" alt="chefs" />
-            </div>
-        </section>
-        <h2 id="retseptid">Retseptid</h2>
-        <section id="erinevad-köögid">
-            <div class="eesti"><h2 id="img-description">EESTI KÖÖK</h2></div>
-            <div class="aasia"><h2 id="img-description">AASIA KÖÖK</h2></div>
-            <div class="itaalia"><h2 id="img-description">ITAALIA KÖÖK</h2></div>
-        </section>
-    </div>
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-text">
-                <ul>
-                    <li>&copy 01.09.2020</li>
-                    <li>tel: +372 5123 4567</li>
-                    <li><a href="mailto:email@email.com">email@email.com</a></li>
+        <!-- navigatsioon -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Vannisoolad</a> 
+                            <a class="dropdown-item" href="#">Vannipiimad</a> 
+                            <a class="dropdown-item" href="#">Vannipommid</a>
+                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Kehakreemid</a> 
+                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
+                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
+                            <a class="dropdown-item" href="#">Deodorandid</a> 
+                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
+                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
+                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="ettevottest.html">Ettevõttest</a></li>
                 </ul>
+                <!-- search -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                </form>
             </div>
-            <div class="social-logos">
-                <a href="https://www.twitter.com"><img id="twitter" src="./img/twitter.svg" alt="twitter logo"></a>
-                <a href="https://www.facebook.com"><img id="facebook" src="./img/facebook.svg" alt="facebook logo"></a>
+            <!-- cart -->
+            <!--
+            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
+            -->
+            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+        </nav> 
+        <!-- breadcrumb -->
+        <section>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white my-2 ml-2">
+                    <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
+                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
+                    -->
+                    <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+                </ol>
+            </nav>  
+        </section>
+        <!-- jumbotron --->
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Tere tulemast!</h1>
+            <p class="lead">Otsid endale uut seepi? Oled jõudnud selleks kõige ideaalsemasse kohta.</p>
+            <a id="jumbotron-button" class="btn btn-lg" href="#top" role="button">Uuri meie top tooteid</a>
+          </div>
+        <!-- tooted --->
+        <section>
+            <div class="container">
+                <h2 id="top" class="h mb-3">TOP</h2>
+                <div class="row"> 
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 1</a></h5>
+                                <p class="text-muted card-text"> 15.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 2</a></h5>
+                                <p class="text-muted card-text"> 12.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 3</a></h5>
+                                <p class="text-muted card-text"> 9.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 4</a></h5>
+                                <p class="text-muted card-text"> 18.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 5</a></h5>
+                                <p class="text-muted card-text"> 1.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-4 mb-4"> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                            <div class="card-body"> 
+                                <h5> <a href="#" class="text-dark">Toode 6</a></h5>
+                                <p class="text-muted card-text"> 5.99&#8364;</p> 
+                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </section>   
+        <!-- jalus --->
+        <footer class="bg-light">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between">
+                    <div id="contact" class="col-lg-6 d-flex flex-column">
+                        <p><b>tel:</b> +372 5123 4567</p>
+                        <p><b>aadress:</b> <a href="https://goo.gl/maps/v9dQjxyZsxFnYCGE8">Narva maantee 18, 51009 Tartu</a></p>
+                        <p><b>e-mail:</b> soap [ät] ut [punkt] ee</p>
+                    </div>
+                    <div id="social-icons" class="col-lg-6 d-flex flex-column">
+                        <a href="https://www.facebook.com/"><img id="facebook" src="./facebook.svg" alt="facebook logo" /></a>
+                        <a href="https://www.twitter.com/"><img id="twitter" src="./twitter.svg" alt="twitter logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>       
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  </body>
 </html>
