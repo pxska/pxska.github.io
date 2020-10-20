@@ -1,83 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="reset.css">
+    <title>Vinge bänd | Esileht</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <main>
-        <section id="section1">
-            <h3>1. osa: Kell</h3>
-            <div id="clock"></div>
-        </section>
-        <hr>
-        <section id="section2">
-            <h3>2. osa: Vormid</h3>
-            <form id="form">
-                <!-- input field --->
-                <div id="input-fields">
-                    <div id="first-name">
-                        <label for="fname">Eesnimi:</label>
-                        <input type="text" id="fname" name="fname">
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><strong>VINGE BÄND</strong></a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html"><strong>ESILEHT</strong></a>
+            <a class="nav-link" href="meist.html"><strong>MEIST</strong></a>
+            <a class="nav-link" href="#"><strong>MUUSIKA</strong></a>
+            <a class="nav-link" href="kontakt.html"><strong>KONTAKT</strong></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <video loop muted autoplay class="video">
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </header>
+
+        <div id="newsAndConcerts" class="row">
+            <div id="news" class="col-5">
+                <h1 class="py-3">UUDISED</h1>
+                <img class="img-fluid" src="/media/bandipilt.jpg" alt="band" />
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, similique esse neque labore veritatis blanditiis, voluptatum iusto distinctio inventore optio error mollitia voluptatem dignissimos eaque animi est sequi modi nam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor similique, voluptates et eius, aspernatur quis ab accusantium pariatur maiores quae sapiente voluptatem exercitationem. At ad et quibusdam! Animi, voluptatibus praesentium.</p>
+            </div>
+            <div id="concerts" class="col-5">
+                <h1 class="py-3">ESINEMISED</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi beatae magnam enim dolore id fugiat, commodi sapiente facilis incidunt consequatur velit, voluptatibus impedit cupiditate, eos nemo debitis. Enim, similique dicta?</p>
+                <div class="locations">
+                    <div class="harjumaa">
+                        <h3>Harjumaa</h3>
+                        <p><strong>19.10</strong> Kolgaküla rahvamaja</p>
+                        <p><strong>21.10</strong> Nõmme kultuurikeskus</p>
+                        <p><strong>23.10</strong> Anija mõis</p>
                     </div>
-                    <div id="last-name">
-                        <label for="lname">Perekonnanimi:</label>
-                        <input type="text" id="lname" name="lname">
+                    <div class="tartumaa">
+                        <h3>Tartumaa</h3>
+                        <p><strong>26.10</strong> Karlova teater</p>
+                        <p><strong>28.10</strong> Eesti Rahva Muuseum</p>
+                        <p><strong>30.10</strong> Vanemuise kontserdimaja</p>
+                    </div>
+                    <div class="laaneviru">
+                        <h3>Lääne-Viru</h3>
+                        <p><strong>02.11</strong> Haljala rahvamaja</p>
+                        <p><strong>04.11</strong> Rakvere Põhjakeskus</p>
+                        <p><strong>06.11</strong> Rabasaare küla</p>
                     </div>
                 </div>
-                <!-- checkbox --->
-                <div id="form-checkbox">
-                    <div class="box">
-                        <input type="checkbox" id="v1" name="v1" value="present">
-                        <label for="vehicle1"> See on kingitus</label> <!-- 5€ --->
-                    </div>
-                    <div class="box">
-                        <input type="checkbox" id="v2" name="v2" value="contactless">
-                        <label for="vehicle2"> Soovin kontaktivaba tarnet</label> <!-- 1€ --->
-                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <a href="kontakt.html"><i>Kontaktinfo</i></a>
                 </div>
-                <div id="form-radio">
-                    <div class="radio">
-                        <input type="radio" id="kassid" name="kassvkoer" value="kassid">
-                        <label for="kass">Mulle meeldivad kassid</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" id="koerad" name="kassvkoer" value="koerad">
-                        <label for="koer">Mulle meeldivad koerad</label>
-                    </div>
+                <div class="col-6">
+                    <ul class="social-icons d-flex justify-space-between">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.soundcloud.com/" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                        <li><a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
-                <!-- dropdown --->
-                <div id="dropdown">
-                    <label for="linn">Valige linn: </label>
-                    <select name="linn" id="linn">
-                        <option value="">- Valige linn -</option>
-                        <option value="tln">Tallinn</option> <!-- 0€ --->
-                        <option value="trt">Tartu</option> <!-- 2.5€ --->
-                        <option value="nrv">Narva</option> <!-- 2.5€ --->
-                        <option value="prn">P&auml;rnu</option> <!-- 3€ --->
-                    </select>
-                </div>
-                <div id="calc">
-                    <input type="submit" value="Arvuta tarne hind:" id="btn-delivery">
-                </div>
-                <div id="delivery"></div>
-            </form>
-        </section>
-        <hr>
-        <section id="section3">
-            <h3>3. osa: Kaart</h3>
-            <div id="map"></div>
-        </section>
-    </main>
-    <script type='text/javascript' src="script.js"></script>
-    <script type='text/javascript'
-        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AqLLRE37SJGqIxXEYxezPUa6fF2oCzl3cvG4n05FtFIVBrotBYxchpMYYpwuxBak]'
-        async defer></script>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87e0107eb7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
